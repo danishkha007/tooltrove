@@ -32,19 +32,19 @@ const Navbar = () => {
 			<div className="navbar">
 				<div>
 					{/* <img src="" alt="Tools" className="logo"></img> */}
-					<a className={activeLink === 'home' ? 'active logo' : 'logo'} onClick={() => { onUpdateActiveLink('home'); redirectTo('/') }}>Home</a>
+					<a className={activeLink === 'home' ? 'active logo' : 'logo'} onClick={() => { onUpdateActiveLink('home'); redirectTo('/tooltrove') }}>Home</a>
 				</div>
 				<ul className="navbar-menu">
 					<li className={activeLink === 'about' ? 'active menu-items' : 'menu-items'}
-						onClick={() => { onUpdateActiveLink('about'); redirectTo('/about') }}>
+						onClick={() => { onUpdateActiveLink('about'); redirectTo('/tooltrove/about') }}>
 						About
 					</li>
 					<li className={activeLink === 'products' ? 'active menu-items' : 'menu-items'}
-						onClick={() => { onUpdateActiveLink('products'); redirectTo('/products') }}>
+						onClick={() => { onUpdateActiveLink('products'); redirectTo('/tooltrove/products') }}>
 						Products
 					</li>
 					<li className={activeLink === 'contact' ? 'active menu-items' : 'menu-items'}
-						onClick={() => { onUpdateActiveLink('contact'); redirectTo('/contact') }}>
+						onClick={() => { onUpdateActiveLink('contact'); redirectTo('/tooltrove/contact') }}>
 						Contact
 					</li>
 				</ul>
