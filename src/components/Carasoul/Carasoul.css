@@ -1,0 +1,10 @@
+.carasoul{
+    width: 100%;
+    border-top: 2px Solid #dadada;
+    border-bottom: 2px Solid #dadada;
+    background-color: #f0f0f0;
+}
+.calculators-ctn{
+    margin: 0 10px;
+    height: 300px;
+}
