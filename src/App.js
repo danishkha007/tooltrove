@@ -16,11 +16,11 @@ function App() {
 		<Router>
 			<Navbar />
 			<Routes>
-				<Route exact path="/" element={<Home />} />
-				<Route path="/about" element={<About />} />
-				<Route path="/contact" element={<Contact />}/>
-				<Route path="/products" element={<Blogs />} />
-				<Route path="/products/calculators/loan-calculator" element={loanCalculator()} />
+				<Route exact path="/tooltrove/" element={<Home />} />
+				<Route path="/tooltrove/about" element={<About />} />
+				<Route path="/tooltrove/contact" element={<Contact />}/>
+				<Route path="/tooltrove/products" element={<Blogs />} />
+				<Route path="/tooltrove/products/calculators/loan-calculator" element={loanCalculator()} />
 				{/* <Route path="/sign-up" element={<SignUp />}/> */}
 			</Routes>
 			<Footer />
