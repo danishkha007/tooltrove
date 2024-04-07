@@ -1,12 +1,17 @@
-// Filename - pages/signup.js
-
 import React from "react";
+import Carasoul from "../components/Carasoul/Carasoul";
+import Navbar from "../components/Navbar/Navbar";
+import Footer from "../components/Footer/Footer";
 
 const SignUp = () => {
 	return (
-		<div>
-			<h1>Sign Up Successful</h1>
-		</div>
+		<body>
+			<Navbar />
+			<section className="welcome">
+				Sign Up Page
+			</section>
+			<Footer/>
+		</body>
 	);
 };
 

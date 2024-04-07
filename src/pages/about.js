@@ -1,15 +1,17 @@
-// Filename - pages/about.js
-
 import React from "react";
+import Carasoul from "../components/Carasoul/Carasoul";
+import Navbar from "../components/Navbar/Navbar";
+import Footer from "../components/Footer/Footer";
 
 const About = () => {
 	return (
-		<div>
-			<h1>
-				GeeksforGeeks is a Computer Science portal
-				for geeks.
-			</h1>
-		</div>
+		<body>
+			<Navbar />
+			<section className="welcome">
+				About Us Page
+			</section>
+			<Footer/>
+		</body>
 	);
 };
 

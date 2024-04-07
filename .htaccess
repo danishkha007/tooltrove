@@ -1,6 +1,0 @@
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-
-RewriteRule ^(index|signup|contact|products)$ $1.js [NC,L]
-RewriteRule ^products/calculators/([a-zA-Z0-9]+)/?$ index.js?index=$1 
