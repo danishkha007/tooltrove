@@ -1,10 +1,13 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom"
+import { useNavigate, Link } from "react-router-dom"
 import './Navbar.css';
 
 const Navbar = () => {
-	const [activeLink, setActiveLink] = useState('home');
+	const [activeLink, setActiveLink] = useState('');
+	const onUpdateActiveLink = (value) => {
+		setActiveLink(value);
+	}
 	const [scrolled, setScrolled] = useState(false);
 	const navigate = useNavigate();
 	const redirectTo = (path) => navigate(path);
@@ -23,9 +26,6 @@ const Navbar = () => {
 		return () => window.removeEventListener("scroll", onScroll);
 	}, [])
 
-	const onUpdateActiveLink = (value) => {
-		setActiveLink(value);
-	}
 
 	return (
 		<header className={scrolled ? "scrolled" : ""}>
@@ -39,26 +39,19 @@ const Navbar = () => {
 						}}>Home</a>
 				</div>
 				<ul className="navbar-menu">
-					<li className={activeLink === 'about' ? 'active menu-items' : 'menu-items'}
-						onClick={() => { 
-							onUpdateActiveLink('about'); 
-							redirectTo('/about') 
-						}}>
-						About
+					<li value="about" 
+						className={activeLink === 'about' ? 'active menu-items' : 'menu-items'}	
+					>
+						<Link className="navlinks" onClick={() => {onUpdateActiveLink('about');}} to="/about">About</Link>
 					</li>
-					<li className={activeLink === 'products' ? 'active menu-items' : 'menu-items'}
-						onClick={() => { 
-							onUpdateActiveLink('products'); 
-							redirectTo('/products') 
-						}}>
-						Products
+					<li className={activeLink === 'products' ? 'active menu-items' : 'menu-items'} onClick={() => {onUpdateActiveLink('products')}}>
+						<Link to="/products">Products</Link>
 					</li>
-					<li className={activeLink === 'contact' ? 'active menu-items' : 'menu-items'}
-						onClick={() => { 
-							onUpdateActiveLink('contact'); 
-							redirectTo('/contact') 
-						}}>
-						Contact
+					<li className={activeLink === 'contact' ? 'active menu-items' : 'menu-items'} onClick={() => {onUpdateActiveLink('contact')}}>
+						<Link to="/contact">Contact Us</Link>
+					</li>
+					<li className={activeLink === 'contact' ? 'active menu-items' : 'menu-items'} onClick={() => {onUpdateActiveLink('contact')}}>
+						<Link to="/sign-up">Sign Up</Link>
 					</li>
 				</ul>
 			</div>

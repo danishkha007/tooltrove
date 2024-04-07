@@ -19,6 +19,7 @@ header{
 .logo{
 	font-size: 20px;
 	font-weight: 900;
+	text-decoration: none;
 	color: black;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -35,13 +36,17 @@ header{
 }
 .menu-items{
 	margin: 0 0 0 20px;
-	color: #888888;
-	text-decoration: none;
+	/* color: #888888; */
+	/* text-decoration: none !important; */
 
 }
-.menu-items:hover{
+.navlinks{
+	color: #888888;
+	text-decoration: none;
+}
+.navlinks:hover{
 	color: #000000;
 }
-.active{
+.active .navlinks{
 	color: #000000;
 }
