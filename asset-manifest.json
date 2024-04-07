@@ -1,15 +1,13 @@
 {
   "files": {
     "main.css": "/tooltrove/static/css/main.7fa8c17d.css",
-    "main.js": "/tooltrove/static/js/main.f7c63892.js",
-    "static/js/453.a08d3c15.chunk.js": "/tooltrove/static/js/453.a08d3c15.chunk.js",
+    "main.js": "/tooltrove/static/js/main.b9c460fd.js",
     "index.html": "/tooltrove/index.html",
     "main.7fa8c17d.css.map": "/tooltrove/static/css/main.7fa8c17d.css.map",
-    "main.f7c63892.js.map": "/tooltrove/static/js/main.f7c63892.js.map",
-    "453.a08d3c15.chunk.js.map": "/tooltrove/static/js/453.a08d3c15.chunk.js.map"
+    "main.b9c460fd.js.map": "/tooltrove/static/js/main.b9c460fd.js.map"
   },
   "entrypoints": [
     "static/css/main.7fa8c17d.css",
-    "static/js/main.f7c63892.js"
+    "static/js/main.b9c460fd.js"
   ]
 }
