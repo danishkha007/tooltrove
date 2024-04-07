@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.7fa8c17d.css",
-    "main.js": "/static/js/main.a07edfcd.js",
-    "static/js/453.a08d3c15.chunk.js": "/static/js/453.a08d3c15.chunk.js",
-    "index.html": "/index.html",
-    "main.7fa8c17d.css.map": "/static/css/main.7fa8c17d.css.map",
-    "main.a07edfcd.js.map": "/static/js/main.a07edfcd.js.map",
-    "453.a08d3c15.chunk.js.map": "/static/js/453.a08d3c15.chunk.js.map"
+    "main.css": "/tooltrove/static/css/main.7fa8c17d.css",
+    "main.js": "/tooltrove/static/js/main.f7c63892.js",
+    "static/js/453.a08d3c15.chunk.js": "/tooltrove/static/js/453.a08d3c15.chunk.js",
+    "index.html": "/tooltrove/index.html",
+    "main.7fa8c17d.css.map": "/tooltrove/static/css/main.7fa8c17d.css.map",
+    "main.f7c63892.js.map": "/tooltrove/static/js/main.f7c63892.js.map",
+    "453.a08d3c15.chunk.js.map": "/tooltrove/static/js/453.a08d3c15.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7fa8c17d.css",
-    "static/js/main.a07edfcd.js"
+    "static/js/main.f7c63892.js"
   ]
 }
