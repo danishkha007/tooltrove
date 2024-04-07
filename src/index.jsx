@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import About from './pages/about';
-import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider, } from "react-router-dom";
 import Contact from './pages/contact';
 import Products from './pages/Products';
@@ -22,4 +21,3 @@ root.render(
   <RouterProvider router={router} />
 );
 
-reportWebVitals();
